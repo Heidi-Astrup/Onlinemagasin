@@ -1,0 +1,14 @@
+/*Inter - font til brødtekst*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Tenor+Sans&display=swap');
+
+/*Tenor Sans - font til overskrifter*/
+@import url('https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap');
+
+:root {
+    --overskrift: "Tenor Sans", sans-serif;
+    --font: "Inter", sans-serif;
+    --rod: #a06161;
+    --lysrod: #e1ccbe;
+    --grøn: #e3eab3;
+    --grå: #617180;
+}
