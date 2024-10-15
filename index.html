@@ -11,24 +11,53 @@
 <body>
     <header>
         <!-- Navigations barer - menu -->
-        <nav class="container">
+        <input type="checkbox" id="menu-bar">
+        <label for="menu-bar">Menu</label>
+        <nav class="navbar">
             <div class="logo">
                 <a href="index.html"><img id="logo" src="images/logo.png" alt="HAPS logo | budgetvenlig og hurtig mad til studerende"></a>
             </div>
-            <!-- husk at der skal vær en active<a href="index.html" class="active" >FORSIDE</a>-->
+
+            
             <div class="menu">
-                <article class="menupunkter">
-                    <a href="opskrifter.html">OPSKRIFTER</a>
-                </article>
-                <article class="menupunkter">
-                    <a href="madplan.html">MADPLAN</a>
-                </article>
-                <article class="menupunkter">
-                    <a href="indkob.html">INDKØB</a>
-                </article>
-                <article class="menupunkter">
-                    <a href="omos.html">OM OS</a>
-                </article>
+                <ul>
+                    <li>
+                        <article class="menupunkter">
+                        <a href="opskrifter.html">OPSKRIFTER</a>
+                        </article>
+                            <ul>
+                                <li><a href="#">Morgenmad</a></li>
+                                <li><a href="#">Frokost</a></li>
+                                <li><a href="kartoffelsalat.html">Aftensmad</a></li>
+                                <li><a href="#">Mad på under 30 min</a></li>
+                                <li><a href="karry.html">På budget</a></li>
+                                <li><a href="#">Vegetarisk</a></li>
+                                <li><a href="#">Proteinrigt</a></li>
+                                <li><a href="#">Mealprep</a></li>
+                            </ul>
+                    </li>
+                    <li>
+                        <article class="menupunkter">
+                        <a href="madplan.html">MADPLAN</a>
+                        </article>
+                            <ul>
+                                <li><a href="madplan.html">Ugens madplan</a></li>
+                                <li><a href="#">Blog</a></li>
+                            </ul>
+                    </li>
+                    <li>
+                        <article class="menupunkter">
+                        <a href="indkob.html">INDKØB</a>
+                        </article>
+                    </li>
+                    <li>
+                        <article class="menupunkter">
+                        <a href="omos.html">OM OS</a>
+                        </article>
+                        <ul>
+                            <li><a href="#">Kontakt</a></li>
+                        </ul>
+                    </li>
             </div>
 
             <div class="logind">
@@ -43,28 +72,37 @@
     <main>
         <div class="billedecontainer">
             <div class="del">
-                <a href="kartoffelsalat.html" class="billede"><img src="images/kartoffelsalat.png" alt="Grøn kartoffelsalat"></a>
-                <a href="kartoffelsalat.html" class="billede"><img src="images/steak.png" alt=""></a>
-                <a href="kartoffelsalat.html" class="billede"><img src="images/pastagryde.png" alt=""></a>
-                <a href="kartoffelsalat.html" class="billede"><img src="images/pastapesto.png" alt=""></a>
+                <div class="blok">
+                    <a href="kartoffelsalat.html" class="billede"><img src="images/kartoffelsalat.png" alt="Grøn kartoffelsalat"></a>
+                </div>
+                <div class="blok">
+                    <div class="ret1">
+                        <a href="kartoffelsalat.html" class="billede"><img id="steak" src="images/steak.png" alt=""></a>
+                    </div>
+                    <div class="ret2">
+                        <a href="kartoffelsalat.html" class="billede"><img id="pastagryde" src="images/pastagryde.png" alt=""></a>
+                        <a href="kartoffelsalat.html" class="billede"><img id="pastapesto" src="images/pastapesto.png" alt=""></a>
+                    </div>
+                </div>
             </div>
 
             <div class="del">
                 <div class="blok">
-                    <div class="ret">
-                        <a href="kartoffelsalat.html" class="billede"><img src="images/romogryde.png" alt=""></a>
-                        <a href="kartoffelsalat.html" class="billede"><img src="images/cremetpasta.png" alt=""></a>
+                    <div class="ret3">
+                        <a href="kartoffelsalat.html" class="billede"><img id="romo" src="images/romogryde.png" alt=""></a>
+                        <a href="kartoffelsalat.html" class="billede"><img id="cremetpasta" src="images/cremetpasta.png" alt=""></a>
                     </div>
-                    <div class="ret2">
-                        <a href="kartoffelsalat.html" class="billede" id="gronpasta"><img src="images/grønpasta.png" alt=""></a>
-                        <a href="kartoffelsalat.html" class="billede" id="karry"><img src="images/karry.png" alt="" style="width: 100%; height: 337px; object-fit: cover;"></a>
+                    <div class="ret4">
+                        <a href="kartoffelsalat.html" class="billede"><img id="gronpasta" src="images/grønpasta.png" alt=""></a>
+                        <a href="kartoffelsalat.html" class="billede"><img id="karry" src="images/karry.png" alt="" style="width: 100%; height: 337px; object-fit: cover;"></a>
                     </div>
                 </div>
 
                 <div class="blok">
-                    <a href="kartoffelsalat.html" class="billede"><img src="images/burger.png" alt=""></a>
+                    <a href="kartoffelsalat.html" class="billede" id="burger"><img id="burger" src="images/burger.png" alt=""></a>
                 </div>
             </div>
+
         </div>
     </main>
 

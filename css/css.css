@@ -14,24 +14,93 @@
     --black: black;
 }
 
+main{
+    padding-top: 110px;
+}
+
 /*fjerner default styles i h3 og h4*/
-h3, h4{
-    margin: 0;
-    padding: 0;
-    border: 0;
+h3, h4, img{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
     font-size: 100%;
     font: inherit;
   }
 
 body{
     width: 100%;
-    margin: 0px;
+    margin: 0%;
 }
+
 
 a{
     color: var(--black);
 }
 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Header dropdown menu*/
+header .navbar ul {
+    list-style: none;
+}
+
+header .navbar ul li {
+    position: relative;
+    float: left;
+    
+}
+
+
+header .navbar ul li a {
+    
+    padding: 18px;
+    color: #333;
+    display: block;
+}
+
+header .navbar ul li a:hover {
+    background: var(--rod);
+    color: #fff;
+}
+
+header .navbar ul li ul {
+    position: absolute;
+    left: 0;
+    width: 200px;
+    background: #fff;
+    display: none;
+}
+
+header .navbar ul li ul li {
+    width: 100%;
+    border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+header .navbar ul li ul li ul {
+    left: 200px;
+    top:0;
+}
+
+header .navbar ul li:focus-within > ul,
+header .navbar ul li:hover > ul {
+    display: block;
+}
+
+#menu-bar {
+    display: none;
+}
+
+header label {
+    font-size: 20px;
+    color: #333;
+    cursor: pointer;
+    display: none;
+}
 
 
 #logo{
@@ -44,8 +113,11 @@ a{
     color: #a06161;
 }
 
-.container{
+.navbar{
+    position: fixed;
     display: flex;
+
+    background: #fff;
     width: 100%;
     justify-content: space-between;
     font-family: var(--font);
@@ -57,17 +129,21 @@ a{
 .menu{
     width: 60%;
     display: flex;
-    justify-content: space-between;
+    justify-content: right;
     border: 2px solid blue;
 }
 
 .logo{
     width: 15%;
+    padding-top: 8px;
+
 }
 
 .menupunkter{
-    padding-top: 50px;
+    padding-top: 30px;
+    padding-bottom: 0px;
     border: 2px solid red;
+    margin-right: 75px;
 
 }
 
@@ -97,7 +173,6 @@ a{
     border: 2px solid rgb(255, 102, 0);
 
 }
-
 
 
 h4{
@@ -182,24 +257,60 @@ footer{
 
 }
 
-.ret{
+.ret1{
     display: block;
-    width: 40%;
+    width: 55%;
     border: 2px solid rgb(50, 182, 205);
 
 }
 .ret2{
     display: block;
+    width: 45%;
+    border: 2px solid rgb(50, 182, 205);
+    object-fit: cover;
+
+}
+
+.ret3{
+    display: block;
+    width: 40%;
+    border: 2px solid rgb(50, 182, 205);
+
+}
+.ret4{
+    display: block;
     width: 60%;
     border: 2px solid rgb(50, 182, 205);
     object-fit: cover;
+
+}
+
+#steak{
+    width: 100%;
+    height: 574px; 
+    object-fit: cover;
+    object-position: 80% 40%;
+}
+
+#pastagryde{
+    width: 100%;
+    height: 237px; 
+    object-fit: cover;
+    object-position: 80% 40%;
+}
+
+#pastapesto{
+    width: 100%;
+    height: 337px; 
+    object-fit: none;
+    object-position: 40% 40%;
 }
 
 #gronpasta{
     width: 100%;
     height: 237px; 
-    object-fit: none;
-    object-position: 70% 35%;
+    object-fit: cover;
+    object-position: 80% 200%;
 }
 
 #karry{
@@ -208,3 +319,86 @@ footer{
     object-fit: cover;
     
 }
+
+#romo{
+    width: 100%;
+    height: 337px; 
+    object-fit: cover;
+    object-position: 80% 200%;
+}
+
+#cremetpasta{
+    width: 100%;
+    height: 237px; 
+    object-fit: cover;
+    object-position: 80% 50%;
+  
+}
+
+#burger{
+    width: 100%;
+    height: 400px; 
+    object-fit: cover;
+    object-position: 80% 40%;
+
+}
+
+
+.artikel{
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    
+    border: 2px solid #617180;
+}
+
+
+.artikel2{
+    width: 50%;
+    border: 2px solid rgb(243, 28, 28);
+    padding-left: 30px;
+
+}
+
+.artikel2{
+    width: 90%;
+    border: 2px solid rgb(243, 28, 28);
+    padding-left: 30px;
+    font-family: var(--font);
+}
+
+.video{
+    width: 90%;
+    border: 2px solid rgb(243, 28, 28);
+    padding-bottom: 0px;
+
+}
+
+.artikel2 #tips{
+    padding-top: 20px;
+    padding-right: 10px;
+    width: 90%;
+    border: 2px solid rgb(243, 28, 28);
+    padding-left: 30px;
+    background-color: var(--grøn);
+
+}
+
+#artikel2{
+    padding-top: 20px;
+
+    width: 90%;
+    background-color: var(--grøn);
+}
+
+#artikel2 ul{
+    font-family: var(--font);
+    font-weight: 350;
+    padding-left: 15px;
+}
+
+#artikel2 li{
+    padding-left: 15px;
+}
+
