@@ -12,20 +12,28 @@
     --grøn: #e3eab3;
     --grå: #617180;
     --black: black;
+    --gennemsigtighvid: rgba(255,255,255,0.68);
+
 }
 
 main{
-    padding-top: 110px;
+    padding-top: 85px;
+    min-height: 500px;
 }
 
 /*fjerner default styles i h3 og h4*/
-h3, h4, img{
+h2, h3, h4, img{
     margin: 0px;
     padding: 0px;
     border: 0px;
     font-size: 100%;
     font: inherit;
   }
+
+h2{
+    font-family: var(--overskrift);
+    font-size: xx-large;
+}
 
 body{
     width: 100%;
@@ -35,6 +43,7 @@ body{
 
 a{
     color: var(--black);
+    text-decoration: none;
 }
 
 
@@ -44,6 +53,7 @@ a{
     box-sizing: border-box;
 }
 
+
 /*Header dropdown menu*/
 header .navbar ul {
     list-style: none;
@@ -52,20 +62,17 @@ header .navbar ul {
 header .navbar ul li {
     position: relative;
     float: left;
-    
 }
 
 
 header .navbar ul li a {
-    
-    padding: 18px;
+    padding: 10px;
     color: #333;
     display: block;
 }
 
 header .navbar ul li a:hover {
-    background: var(--rod);
-    color: #fff;
+    color: var(--rod);
 }
 
 header .navbar ul li ul {
@@ -105,45 +112,37 @@ header label {
 
 #logo{
     width: 100%;
-    border: 2px solid pink;
-
 }
 
-.active{
-    color: #a06161;
-}
 
 .navbar{
     position: fixed;
     display: flex;
-
+    z-index: 100;
     background: #fff;
     width: 100%;
     justify-content: space-between;
     font-family: var(--font);
     font-weight: 250;
-    border: 2px solid yellow;
 
 }
 
 .menu{
     width: 60%;
     display: flex;
-    justify-content: right;
-    border: 2px solid blue;
+    justify-content: space-evenly;
 }
 
 .logo{
     width: 15%;
-    padding-top: 8px;
-
+    padding-top: 10px;
+    padding-left: 10px;
 }
 
 .menupunkter{
-    padding-top: 30px;
+    padding-top: 45px;
     padding-bottom: 0px;
-    border: 2px solid red;
-    margin-right: 75px;
+    margin-right: 95px;
 
 }
 
@@ -151,18 +150,22 @@ header label {
     padding-top: 30px;
     padding-right: 20px;
     margin-left: 50px;
-    border: 2px solid green;
 
 }
+/*slut på header*/
 
 
+/*Skriften til Madplan*/
 .ugecontainer{
     margin: auto;
+    margin-top: 20px;
+    margin-bottom: 100px;
+
     display: flex;
     width: 90%;
     justify-content: space-between;
-    border: 2px solid rgb(255, 174, 0);
     text-align: center;
+
 
 }
 
@@ -170,11 +173,12 @@ header label {
     text-align: center;
     min-width: 150px;
     max-width: 150px;
-    border: 2px solid rgb(255, 102, 0);
-
+    p{
+        text-align: center;
+    }
 }
 
-
+/*styling af skrifter*/
 h4{
     font-family: var(--font);
     font-weight: 200;
@@ -192,15 +196,22 @@ p{
     text-align: left;
 }
 
+/*Footer*/
 footer{
     background-color: var(--rod);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: -5px;
+}
+
+footer h3{
+    font-size: xx-large;
 }
 
 .footcontainer{
-    width: 100%;
+    width: 95%;
     margin: auto;
     padding-left: 5px;
-    border: 2px solid rgb(0, 30, 255);
     display: flex;
     justify-content: space-between;
     
@@ -209,31 +220,38 @@ footer{
 
 .foot{
     width: 30%;
-    border: 2px solid rgb(255, 0, 47);
     text-align: center;
-
 }
 
 #foot{
     padding-top: 10px;
     text-align: center;
+    padding-top: 25px;
+
 }
 
 .oplysninger{
-    border: 2px solid rgb(179, 0, 255);
+    padding-top: 20px;
+    padding-left: 10px;
 
 }
 
+#socials{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10px;
+}
+
 .socials{
-    border: 2px solid rgb(0, 255, 55);
+    margin: 5px;
     img{
-        width: 20%;
-        padding-top: 20px;
+        width: 100%;
+        height: 70px;
     }
 }
 
 
-
+/*Index billeder*/
 .billedecontainer{
     width: 100%;
     display: flex;
@@ -243,30 +261,29 @@ footer{
 
 .billede img{
     width: 100%;
+    margin-bottom:-5px;
+   
 }
 
 .del{
     width: 50%;
-    border: 2px solid yellowgreen;
 }
 
 .blok{
     display: flex;
     justify-content: block;
-    border: 2px solid rgb(205, 50, 174);
 
 }
 
 .ret1{
     display: block;
     width: 55%;
-    border: 2px solid rgb(50, 182, 205);
+    height: 574px;
 
 }
 .ret2{
     display: block;
     width: 45%;
-    border: 2px solid rgb(50, 182, 205);
     object-fit: cover;
 
 }
@@ -274,20 +291,18 @@ footer{
 .ret3{
     display: block;
     width: 40%;
-    border: 2px solid rgb(50, 182, 205);
 
 }
 .ret4{
     display: block;
     width: 60%;
-    border: 2px solid rgb(50, 182, 205);
     object-fit: cover;
 
 }
 
 #steak{
     width: 100%;
-    height: 574px; 
+    height: 571px; 
     object-fit: cover;
     object-position: 80% 40%;
 }
@@ -308,7 +323,7 @@ footer{
 
 #gronpasta{
     width: 100%;
-    height: 237px; 
+    height: 238px; 
     object-fit: cover;
     object-position: 80% 200%;
 }
@@ -323,8 +338,7 @@ footer{
 #romo{
     width: 100%;
     height: 337px; 
-    object-fit: cover;
-    object-position: 80% 200%;
+    object-fit: fill;
 }
 
 #cremetpasta{
@@ -337,10 +351,132 @@ footer{
 
 #burger{
     width: 100%;
-    height: 400px; 
+    height: 407px; 
     object-fit: cover;
     object-position: 80% 40%;
 
+}
+
+/*Få en hvid gennemsigtig baggrund når man hover over billedet (grøn kartofflesalat) på billedefeedet (index siden)*/
+.image1 {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+  .middle1 {
+    transition: .5s ease;
+    opacity: 0;
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 350px;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: left;
+  }
+  
+  .billede1:hover .image1 {
+    opacity: 0.3;
+  }
+  
+  .billede1:hover .middle1 {
+    opacity: 1;
+    
+  }
+  
+  .text1 {
+    width: 80%;
+    color: black;
+    font-size: 16px;
+    padding: 16px 32px;
+  }
+
+/*Få en hvid gennemsigtig baggrund når man hover over billedet (karry) på billedefeedet (index siden)*/
+  .image2 {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+  .middle2 {
+    transition: .5s ease;
+    opacity: 0;
+    width: 35%;
+    position: absolute;
+    top: 490px;
+    left: 1120px;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: left;
+  }
+  
+  .billede2:hover .image2 {
+    opacity: 0.3;
+  }
+  
+  .billede2:hover .middle2 {
+    opacity: 1;
+    
+  }
+  
+  .text2 {
+    width: 80%;
+    color: black;
+    font-size: 16px;
+    padding: 16px 32px;
+
+  }
+
+
+
+/*Artikel karry*/
+/*hoved billedet under opskrift for kylling i karry*/
+#forsteBoks {
+    position: relative;
+    top: 30%;
+    left: 60px;
+    width: 40%;
+    background-color: var(--gennemsigtighvid);
+    padding: 25px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+
+.opskrifttitel {
+    height: 500px;
+    background: url(/images/karry.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: bottom;
+}
+
+/*hoved billedet under opskrift for kartoffelsalat*/
+#andenBoks {
+    position: relative;
+    top: 30%;
+    left: 60px;
+    width: 40%;
+    background-color: var(--gennemsigtighvid);
+    padding: 25px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+
+.opskrifttitel2 {
+    height: 500px;
+    background: url(/images/kartoffelsalat.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
 }
 
 
@@ -349,28 +485,26 @@ footer{
     margin: auto;
     display: flex;
     justify-content: center;
-    
-    border: 2px solid #617180;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
 }
 
 
 .artikel2{
     width: 50%;
-    border: 2px solid rgb(243, 28, 28);
     padding-left: 30px;
 
 }
 
 .artikel2{
     width: 90%;
-    border: 2px solid rgb(243, 28, 28);
     padding-left: 30px;
     font-family: var(--font);
 }
 
 .video{
-    width: 90%;
-    border: 2px solid rgb(243, 28, 28);
+    width: 95%;
     padding-bottom: 0px;
 
 }
@@ -379,26 +513,114 @@ footer{
     padding-top: 20px;
     padding-right: 10px;
     width: 90%;
-    border: 2px solid rgb(243, 28, 28);
     padding-left: 30px;
     background-color: var(--grøn);
+    font-family: var(--font);
+    font-weight: 350;
+
+
+
+}
+
+.artikel2 #kommentarer{
+    padding-top: 20px;
+    padding-right: 10px;
+    width: 90%;
+    padding-left: 30px;
+    background-color: var(--grøn);
+    font-family: var(--font);
+    font-weight: 350;
+
+
 
 }
 
 #artikel2{
     padding-top: 20px;
 
-    width: 90%;
+    width: 80%;
     background-color: var(--grøn);
+}
+
+.tekst{
+    width: 80%;
 }
 
 #artikel2 ul{
     font-family: var(--font);
     font-weight: 350;
     padding-left: 15px;
+    line-height: 35px;
+
 }
 
 #artikel2 li{
     padding-left: 15px;
+
 }
 
+#tips ul{
+    font-family: var(--font);
+    font-weight: 350;
+    padding-left: 15px;
+}
+
+#tips li{
+    padding-left: 15px;
+    line-height: 25px;
+}
+
+#tips{
+    padding-bottom: 20px;
+}
+
+#mellemrum{
+    line-height: 25px;
+}
+
+#kommentar{
+    width: 95%;
+    min-height: 120px;
+    margin-top: -15px;
+    border: 0px;
+    padding-left: 10px;
+}
+
+#svar{
+    position: relative;
+    top:-25px;
+    width: 95%;
+    text-align: left;
+    padding: 5px;
+    padding-left: 10px;
+    background-color: rgb(214, 214, 214);
+    border: 0px;
+}
+
+#svar:hover{
+    background-color: var(--rod);
+}
+
+#svarr{
+    text-align: center;
+}
+
+
+
+/*madplan - */
+div.scroll-container {
+    background-color: var(--rod);
+    overflow: auto;
+    white-space: nowrap;
+    padding: 10px;
+  }
+  
+  div.scroll-container img {
+    padding: 10px;
+    min-width: 400px;
+    max-width: 400px;
+    min-height: 400px;
+    max-height: 400px;
+    object-fit: cover;
+
+  }

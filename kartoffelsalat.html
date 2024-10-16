@@ -8,27 +8,57 @@
     <link rel="stylesheet" href="css/css.css">
 
 </head>
+
 <body>
     <header>
         <!-- Navigations barer - menu -->
-        <nav class="container">
+        <input type="checkbox" id="menu-bar">
+        <label for="menu-bar">Menu</label>
+        <nav class="navbar">
             <div class="logo">
                 <a href="index.html"><img id="logo" src="images/logo.png" alt="HAPS logo | budgetvenlig og hurtig mad til studerende"></a>
             </div>
-            <!-- husk at der skal vær en active<a href="index.html" class="active" >FORSIDE</a>-->
+
+            
             <div class="menu">
-                <article class="menupunkter">
-                    <a href="opskrifter.html">OPSKRIFTER</a>
-                </article>
-                <article class="menupunkter">
-                    <a href="madplan.html">MADPLAN</a>
-                </article>
-                <article class="menupunkter">
-                    <a href="indkob.html">INDKØB</a>
-                </article>
-                <article class="menupunkter">
-                    <a href="omos.html">OM OS</a>
-                </article>
+                <ul>
+                    <li>
+                        <article class="menupunkter">
+                        <a href="opskrifter.html">OPSKRIFTER</a>
+                        </article>
+                            <ul>
+                                <li><a href="#">Morgenmad</a></li>
+                                <li><a href="#">Frokost</a></li>
+                                <li><a href="kartoffelsalat.html">Aftensmad</a></li>
+                                <li><a href="#">Mad på under 30 min</a></li>
+                                <li><a href="karry.html">På budget</a></li>
+                                <li><a href="#">Vegetarisk</a></li>
+                                <li><a href="#">Proteinrigt</a></li>
+                                <li><a href="#">Mealprep</a></li>
+                            </ul>
+                    </li>
+                    <li>
+                        <article class="menupunkter">
+                        <a href="madplan.html">MADPLAN</a>
+                        </article>
+                            <ul>
+                                <li><a href="madplan.html">Ugens madplan</a></li>
+                                <li><a href="#">Blog</a></li>
+                            </ul>
+                    </li>
+                    <li>
+                        <article class="menupunkter">
+                        <a href="indkob.html">INDKØB</a>
+                        </article>
+                    </li>
+                    <li>
+                        <article class="menupunkter">
+                        <a href="omos.html">OM OS</a>
+                        </article>
+                        <ul>
+                            <li><a href="#">Kontakt</a></li>
+                        </ul>
+                    </li>
             </div>
 
             <div class="logind">
@@ -41,13 +71,72 @@
     </header>
 
     <main>
-        <p>Kartoffelsalat</p>
+        <section class="opskrifttitel2">
+            <div id="andenBoks">
+                <h4>Sund og billig aftensmad for 1 person </h4>
+                <h2>Opskrift på grøn kartoffelsalat</h2>
+            </div>
+        </section>
+
+
+        <div class="artikel">
+            <div class="artikel2">
+                <div class="video"><img class="video" src="images/kartoffelsalat.png" alt=""></div>
+                <div id="tips">
+                    <h3>Tips og tricks</h3>
+                    <ul>
+                        <li>Tilsæt feta eller mozzarella for en ekstra cremet og fyldig smag.</li>
+                        <br><li>Udskift mandlerne med ristede solsikkekerner for en budgetvenlig version.</li>
+                        <br><li>Brug søde kartofler i stedet for almindelige kartofler for en sødere og mere farverig variant.</li>
+                        <br><li>Vil du have lidt ekstra proteiner? Tilføj grillede kyllingestrimler eller kikærter for en mættende og proteinrig aftensmad.</li>
+                        <br><li>Køb færdiglavet pesto – kan anbefale den fra Rema 1000</li>
+                        <br><li>Brug frosne hercutsverts, når bønner ikke er i sæson</li>
+
+                    </ul>
+                </div>
+                <div id="kommentarer">
+                    <form class="form" action="svar.html">
+                        <label for="kommentar"><h3>Kommentarer</h3></label> <br>
+                        <input type="text" id="kommentar" placeholder="Vær den første til at skrive en kommentar...">
+                        <br>
+                        <input type="submit" id="svar" value="Indsend">
+                    </form>
+                </div>
+            </div>
+            
+            <div class="artikel2" id="artikel2">
+                <article class="tekst">
+                    <h3>Ingredienser</h3>
+                    <ul>
+                        <li>500 g kartofler</li>
+                        <li>150 g grønne bønner</li>
+                        <li>100 g spinat</li>
+                        <li>50 g mandler, grofthakkede</li>
+                        <li>et glas grøn pesto</li>
+                    </ul><br>
+
+                    <h3>Fremgangsmåde</h3>
+                    <p id="mellemrum">1. Kog kartoflerne i saltet vand, indtil de er møre, cirka 15-20 minutter. Hæld vandet fra, og lad dem køle lidt af. Halvér kartoflerne, hvis de er store.<br><br>
+
+                        2. Imens blancher du de grønne bønner i kogende vand i 3-4 minutter, så de stadig bevarer lidt bid. Skyl dem hurtigt i koldt vand for at stoppe tilberedningen.<br><br>
+                        
+                        3. Lav grønpestoen ved at blende basilikum, hvidløg, parmesanost, pinjekerner og olivenolie i en blender eller foodprocessor, indtil du har en glat og cremet konsistens. Smag til med salt og peber.<br><br>
+                        
+                        4. Bland kartoflerne og de grønne bønner sammen i en skål, og tilsæt grønpestoen. Vend det hele godt rundt, så pestoen fordeler sig jævnt.<br><br>
+                        
+                        5. Tilføj den friske spinat og de grofthakkede mandler, og dryp lidt ekstra olivenolie over. Smag til med salt og peber.<br><br>
+                        
+                        6. Server straks eller opbevar i køleskabet, hvis du foretrækker den kold.
+                    </p>
+                </article>
+            </div>
+        </div>
     </main>
 
     <footer>
         <div class="footcontainer">
             <article class="foot">
-                <p class="oplysninger">HAPS af <br> Heidi Astrup</p>
+                <p class="oplysninger">HAPS af Heidi Astrup</p>
                 <p class="oplysninger">Email: Heidi@kabelmail.dk</p>
             </article>
 
@@ -56,7 +145,7 @@
                 <h3>#HAPS</h3>
             </article>
 
-            <article class="foot">
+            <article class="foot" id="socials">
                 <a href="www.instagram.com" class="socials"><img src="images/Instagram.png" alt="instagram logo"></a>
                 <a href="www.pinterest.com" class="socials"><img src="images/pinterest.png" alt="pinterest logo"></a>
                 <a href="www.facebook.com" class="socials"><img src="images/facebook.png" alt="facebook logo"></a>

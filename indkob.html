@@ -11,24 +11,53 @@
 <body>
     <header>
         <!-- Navigations barer - menu -->
-        <nav class="container">
+        <input type="checkbox" id="menu-bar">
+        <label for="menu-bar">Menu</label>
+        <nav class="navbar">
             <div class="logo">
                 <a href="index.html"><img id="logo" src="images/logo.png" alt="HAPS logo | budgetvenlig og hurtig mad til studerende"></a>
             </div>
 
+            
             <div class="menu">
-                <article class="menupunkter">
-                    <a href="opskrifter.html">OPSKRIFTER</a>
-                </article>
-                <article class="menupunkter">
-                    <a href="madplan.html">MADPLAN</a>
-                </article>
-                <article class="menupunkter">
-                    <a href="indkob.html" class="active">INDKØB</a>
-                </article>
-                <article class="menupunkter">
-                    <a href="omos.html">OM OS</a>
-                </article>
+                <ul>
+                    <li>
+                        <article class="menupunkter">
+                        <a href="opskrifter.html">OPSKRIFTER</a>
+                        </article>
+                            <ul>
+                                <li><a href="#">Morgenmad</a></li>
+                                <li><a href="#">Frokost</a></li>
+                                <li><a href="kartoffelsalat.html">Aftensmad</a></li>
+                                <li><a href="#">Mad på under 30 min</a></li>
+                                <li><a href="karry.html">På budget</a></li>
+                                <li><a href="#">Vegetarisk</a></li>
+                                <li><a href="#">Proteinrigt</a></li>
+                                <li><a href="#">Mealprep</a></li>
+                            </ul>
+                    </li>
+                    <li>
+                        <article class="menupunkter">
+                        <a href="madplan.html">MADPLAN</a>
+                        </article>
+                            <ul>
+                                <li><a href="madplan.html">Ugens madplan</a></li>
+                                <li><a href="#">Blog</a></li>
+                            </ul>
+                    </li>
+                    <li>
+                        <article class="menupunkter">
+                        <a href="indkob.html">INDKØB</a>
+                        </article>
+                    </li>
+                    <li>
+                        <article class="menupunkter">
+                        <a href="omos.html">OM OS</a>
+                        </article>
+                        <ul>
+                            <li><a href="#">Kontakt</a></li>
+                        </ul>
+                    </li>
             </div>
 
             <div class="logind">
@@ -46,7 +75,23 @@
     </main>
 
     <footer>
+        <div class="footcontainer">
+            <article class="foot">
+                <p class="oplysninger">HAPS af Heidi Astrup</p>
+                <p class="oplysninger">Email: Heidi@kabelmail.dk</p>
+            </article>
 
+            <article class="foot">
+                <p id="foot">Del på</p>
+                <h3>#HAPS</h3>
+            </article>
+
+            <article class="foot" id="socials">
+                <a href="www.instagram.com" class="socials"><img src="images/Instagram.png" alt="instagram logo"></a>
+                <a href="www.pinterest.com" class="socials"><img src="images/pinterest.png" alt="pinterest logo"></a>
+                <a href="www.facebook.com" class="socials"><img src="images/facebook.png" alt="facebook logo"></a>
+            </article>
+        </div>
     </footer>
     
 </body>
