@@ -202,6 +202,7 @@ footer{
     padding-top: 20px;
     padding-bottom: 20px;
     margin-top: -5px;
+    z-index: 100;
 }
 
 footer h3{
@@ -392,7 +393,7 @@ footer h3{
     width: 80%;
     color: black;
     font-size: 16px;
-    padding: 16px 32px;
+    padding: 16px 32px;    
   }
 
 /*Få en hvid gennemsigtig baggrund når man hover over billedet (karry) på billedefeedet (index siden)*/
@@ -408,10 +409,10 @@ footer h3{
   .middle2 {
     transition: .5s ease;
     opacity: 0;
-    width: 35%;
+    width: 25%;
     position: absolute;
     top: 490px;
-    left: 1120px;
+    left: 1080px;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     text-align: left;
@@ -419,15 +420,19 @@ footer h3{
   
   .billede2:hover .image2 {
     opacity: 0.3;
+
+
   }
   
   .billede2:hover .middle2 {
     opacity: 1;
+    width: 25%;
+
     
   }
   
   .text2 {
-    width: 80%;
+    width: 100%;
     color: black;
     font-size: 16px;
     padding: 16px 32px;
@@ -509,16 +514,15 @@ footer h3{
 
 }
 
+
 .artikel2 #tips{
     padding-top: 20px;
     padding-right: 10px;
     width: 90%;
     padding-left: 30px;
-    background-color: var(--grøn);
+    background-color: var(--lysrod);
     font-family: var(--font);
     font-weight: 350;
-
-
 
 }
 
@@ -527,23 +531,23 @@ footer h3{
     padding-right: 10px;
     width: 90%;
     padding-left: 30px;
-    background-color: var(--grøn);
+    background-color: var(--lysrod);
     font-family: var(--font);
     font-weight: 350;
-
-
-
 }
 
 #artikel2{
     padding-top: 20px;
-
+    background-color: var(--lysrod);
     width: 80%;
-    background-color: var(--grøn);
 }
+
+
+
 
 .tekst{
     width: 80%;
+    
 }
 
 #artikel2 ul{
