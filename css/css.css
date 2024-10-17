@@ -4,6 +4,7 @@
 /*Tenor Sans - font til overskrifter*/
 @import url('https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap');
 
+/*variabler*/
 :root {
     --overskrift: "Tenor Sans", sans-serif;
     --font: "Inter", sans-serif;
@@ -13,9 +14,9 @@
     --grå: #617180;
     --black: black;
     --gennemsigtighvid: rgba(255,255,255,0.68);
-
 }
 
+/*sætter en padding på main så headeren ikke går over skriften/main*/
 main{
     padding-top: 85px;
     min-height: 500px;
@@ -28,7 +29,7 @@ h2, h3, h4, img{
     border: 0px;
     font-size: 100%;
     font: inherit;
-  }
+}
 
 h2{
     font-family: var(--overskrift);
@@ -54,7 +55,7 @@ a{
 }
 
 
-/*Header dropdown menu*/
+/*Header dropdown menu - med brug af Murrats kode eksempel*/
 header .navbar ul {
     list-style: none;
 }
@@ -124,7 +125,6 @@ header label {
     justify-content: space-between;
     font-family: var(--font);
     font-weight: 250;
-
 }
 
 .menu{
@@ -143,40 +143,14 @@ header label {
     padding-top: 45px;
     padding-bottom: 0px;
     margin-right: 95px;
-
 }
 
 .logind{
     padding-top: 30px;
     padding-right: 20px;
     margin-left: 50px;
-
 }
 /*slut på header*/
-
-
-/*Skriften til Madplan*/
-.ugecontainer{
-    margin: auto;
-    margin-top: 20px;
-    margin-bottom: 100px;
-
-    display: flex;
-    width: 90%;
-    justify-content: space-between;
-    text-align: center;
-
-
-}
-
-.beskrivelse{
-    text-align: center;
-    min-width: 150px;
-    max-width: 150px;
-    p{
-        text-align: center;
-    }
-}
 
 /*styling af skrifter*/
 h4{
@@ -215,8 +189,6 @@ footer h3{
     padding-left: 5px;
     display: flex;
     justify-content: space-between;
-    
-
 }
 
 .foot{
@@ -228,13 +200,11 @@ footer h3{
     padding-top: 10px;
     text-align: center;
     padding-top: 25px;
-
 }
 
 .oplysninger{
     padding-top: 20px;
     padding-left: 10px;
-
 }
 
 #socials{
@@ -245,10 +215,11 @@ footer h3{
 
 .socials{
     margin: 5px;
-    img{
-        width: 100%;
-        height: 70px;
-    }
+}
+
+.socials img{
+    width: 100%;
+    height: 70px;  
 }
 
 
@@ -256,14 +227,11 @@ footer h3{
 .billedecontainer{
     width: 100%;
     display: flex;
-    justify-content: wrap;
-
 }
 
 .billede img{
     width: 100%;
     margin-bottom:-5px;
-   
 }
 
 .del{
@@ -272,35 +240,32 @@ footer h3{
 
 .blok{
     display: flex;
-    justify-content: block;
-
 }
 
 .ret1{
     display: block;
     width: 55%;
     height: 574px;
-
 }
+
 .ret2{
     display: block;
     width: 45%;
     object-fit: cover;
-
 }
 
 .ret3{
     display: block;
     width: 40%;
-
 }
+
 .ret4{
     display: block;
     width: 60%;
     object-fit: cover;
-
 }
 
+/*størrelse på allede billeder*/
 #steak{
     width: 100%;
     height: 571px; 
@@ -332,8 +297,7 @@ footer h3{
 #karry{
     width: 100%;
     height: 337px; 
-    object-fit: cover;
-    
+    object-fit: cover;   
 }
 
 #romo{
@@ -347,15 +311,13 @@ footer h3{
     height: 237px; 
     object-fit: cover;
     object-position: 80% 50%;
-  
 }
 
 #burger{
-    width: 100%;
+    width: 209.5%;
     height: 407px; 
     object-fit: cover;
     object-position: 80% 40%;
-
 }
 
 /*Få en hvid gennemsigtig baggrund når man hover over billedet (grøn kartofflesalat) på billedefeedet (index siden)*/
@@ -386,7 +348,6 @@ footer h3{
   
   .billede1:hover .middle1 {
     opacity: 1;
-    
   }
   
   .text1 {
@@ -420,15 +381,11 @@ footer h3{
   
   .billede2:hover .image2 {
     opacity: 0.3;
-
-
   }
   
   .billede2:hover .middle2 {
     opacity: 1;
     width: 25%;
-
-    
   }
   
   .text2 {
@@ -436,12 +393,11 @@ footer h3{
     color: black;
     font-size: 16px;
     padding: 16px 32px;
-
   }
 
 
 
-/*Artikel karry*/
+/*Artikeler*/
 /*hoved billedet under opskrift for kylling i karry*/
 #forsteBoks {
     position: relative;
@@ -492,15 +448,8 @@ footer h3{
     justify-content: center;
     margin-top: 20px;
     margin-bottom: 20px;
-
 }
 
-
-.artikel2{
-    width: 50%;
-    padding-left: 30px;
-
-}
 
 .artikel2{
     width: 90%;
@@ -509,13 +458,12 @@ footer h3{
 }
 
 .video{
-    width: 95%;
+    width: 94.9%;
     padding-bottom: 0px;
-
 }
 
 
-.artikel2 #tips{
+#tips{
     padding-top: 20px;
     padding-right: 10px;
     width: 90%;
@@ -523,7 +471,14 @@ footer h3{
     background-color: var(--lysrod);
     font-family: var(--font);
     font-weight: 350;
+}
 
+#tips li{
+    padding-top: 20px;
+}
+
+#tips ul{
+    width: 90%;
 }
 
 .artikel2 #kommentarer{
@@ -536,14 +491,17 @@ footer h3{
     font-weight: 350;
 }
 
+.h3{
+    margin-bottom: 50px;
+    font-family: var(--overskrift);
+    font-size: larger;
+}
+
 #artikel2{
     padding-top: 20px;
     background-color: var(--lysrod);
     width: 80%;
 }
-
-
-
 
 .tekst{
     width: 80%;
@@ -555,12 +513,10 @@ footer h3{
     font-weight: 350;
     padding-left: 15px;
     line-height: 35px;
-
 }
 
 #artikel2 li{
     padding-left: 15px;
-
 }
 
 #tips ul{
@@ -590,6 +546,7 @@ footer h3{
     padding-left: 10px;
 }
 
+/*svar til formular*/
 #svar{
     position: relative;
     top:-25px;
@@ -609,18 +566,16 @@ footer h3{
     text-align: center;
 }
 
-
-
-/*madplan - */
+/*Madplan*/
+/*madplan - billedecontainer - kilde: https://www.w3schools.com/howto/howto_css_image_gallery_scroll.asp*/
 div.scroll-container {
-    background-color: var(--rod);
     overflow: auto;
     white-space: nowrap;
-    padding: 10px;
+    padding: 0px;
   }
   
   div.scroll-container img {
-    padding: 10px;
+    padding: 0px;
     min-width: 400px;
     max-width: 400px;
     min-height: 400px;
@@ -628,3 +583,24 @@ div.scroll-container {
     object-fit: cover;
 
   }
+/*Skriften til Madplan*/
+.ugecontainer{
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 100px;
+
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.beskrivelse{
+    text-align: center;
+    min-width: 150px;
+    max-width: 150px;
+}
+
+.beskrivelse p{
+    text-align: center;
+}
