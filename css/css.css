@@ -120,7 +120,7 @@ header label {
     display: none;
 }
 
-
+/*Min egen css til headeren*/
 #logo{
     width: 100%;
 }
@@ -233,7 +233,7 @@ footer h3{
 }
 
 
-/*Index billeder*/
+/*Index billeder - feed på forsiden*/
 .billedecontainer{
     width: 100%;
     display: flex;
