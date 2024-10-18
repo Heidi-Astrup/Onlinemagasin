@@ -47,6 +47,16 @@ a{
     text-decoration: none;
 }
 
+/*Når man hover over et link skal det blive rød*/
+a:hover{
+    color: var(--rod);
+}
+
+/*Da footeren er rød skal et link skal det blive lyserød når man hover over det*/
+footer a:hover{
+    color: var(--lysrod);
+}
+
 
 * {
     margin: 0;
@@ -55,7 +65,7 @@ a{
 }
 
 
-/*Header dropdown menu - med brug af Murrats kode eksempel*/
+/*Header dropdown menu - med brug af Murats kode eksempel*/
 header .navbar ul {
     list-style: none;
 }
@@ -159,7 +169,7 @@ h4{
     font-size: large;
 }
 
-h3{
+h3, .h3{
     font-family: var(--overskrift);
     font-size: larger;
 }
@@ -448,7 +458,7 @@ footer h3{
     background-position: center;
 }
 
-
+/*Styling af selve artiklerne*/
 .artikel{
     width: 95%;
     margin: auto;
@@ -480,10 +490,12 @@ footer h3{
     font-weight: 350;
 }
 
+/*Baggrundsfarven på kartoffelsalat - lyserød*/
 .farve1{
     background-color: var(--lysrod);
 }
 
+/*Baggrundsfarven på karry - grøn*/
 .farve2{
     background-color: var(--grøn);
 }
@@ -503,12 +515,6 @@ footer h3{
     padding-left: 30px;
     font-family: var(--font);
     font-weight: 350;
-}
-
-.h3{
-    margin-bottom: 50px;
-    font-family: var(--overskrift);
-    font-size: larger;
 }
 
 #artikel2{
