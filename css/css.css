@@ -9,7 +9,7 @@
     --overskrift: "Tenor Sans", sans-serif;
     --font: "Inter", sans-serif;
     --rod: #a06161;
-    --lysrod: #e1ccbe;
+    --lysrod: #FBE3D6;
     --grøn: #e3eab3;
     --grå: #617180;
     --black: black;
@@ -142,7 +142,7 @@ header label {
 .menupunkter{
     padding-top: 45px;
     padding-bottom: 0px;
-    margin-right: 95px;
+    margin-right: 90px;
 }
 
 .logind{
@@ -265,7 +265,14 @@ footer h3{
     object-fit: cover;
 }
 
-/*størrelse på allede billeder*/
+.ret5{
+    display: block;
+    width: 100%;
+    height: 405px;
+    object-fit: cover;
+}
+
+/*størrelse på allede billeder - 1145*/
 #steak{
     width: 100%;
     height: 571px; 
@@ -308,19 +315,20 @@ footer h3{
 
 #cremetpasta{
     width: 100%;
-    height: 237px; 
+    height: 240px; 
     object-fit: cover;
     object-position: 80% 50%;
 }
 
 #burger{
-    width: 209.5%;
-    height: 407px; 
+    width: 100%;
+    height: 100%; 
     object-fit: cover;
     object-position: 80% 40%;
 }
 
-/*Få en hvid gennemsigtig baggrund når man hover over billedet (grøn kartofflesalat) på billedefeedet (index siden)*/
+/*Få en hvid gennemsigtig baggrund når man hover over billedet (grøn kartofflesalat) på billedefeedet (index siden)
+- lavet med brug af eksempel fra w3s - Kilde: https://www.w3schools.com/howto/howto_css_image_overlay.asp*/
 .image1 {
     opacity: 1;
     display: block;
@@ -373,7 +381,7 @@ footer h3{
     width: 25%;
     position: absolute;
     top: 490px;
-    left: 1080px;
+    left: 85%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     text-align: left;
@@ -468,9 +476,16 @@ footer h3{
     padding-right: 10px;
     width: 90%;
     padding-left: 30px;
-    background-color: var(--lysrod);
     font-family: var(--font);
     font-weight: 350;
+}
+
+.farve1{
+    background-color: var(--lysrod);
+}
+
+.farve2{
+    background-color: var(--grøn);
 }
 
 #tips li{
@@ -486,7 +501,6 @@ footer h3{
     padding-right: 10px;
     width: 90%;
     padding-left: 30px;
-    background-color: var(--lysrod);
     font-family: var(--font);
     font-weight: 350;
 }
@@ -499,7 +513,6 @@ footer h3{
 
 #artikel2{
     padding-top: 20px;
-    background-color: var(--lysrod);
     width: 80%;
 }
 
